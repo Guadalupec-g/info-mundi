@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>InfoMundi 🌍</title>
+  <link rel="stylesheet" href="./styles.css" />
+
+</head>
+<body>
+  <header>
+    <h1>InfoMundi 🌍</h1>
+    <p>Explora países y guarda tus favoritos</p>
+  </header>
+
+  <main>
+    <section class="buscador">
+      <input type="text" id="input-pais" placeholder="Buscar país por nombre..." />
+      <button onclick="buscarPais()">Buscar</button>
+    </section>
+
+    <section id="resultados" class="contenedor">
+      <!-- Aquí se mostrarán los países encontrados -->
+    </section>
+
+    <hr />
+
+    <section class="favoritos">
+      <h2>🌟 Favoritos guardados</h2>
+      <div id="favoritos" class="contenedor"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Proyecto Web con FastAPI & MySQL</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
